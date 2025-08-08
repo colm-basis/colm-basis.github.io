@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Bootstrapping Visual Assistant Development with Situated Interaction Simulation">
+  <meta property="og:title" content="Bootstrapping Visual Assistant Development with Situated Interaction Simulation"/>
+  <meta property="og:description" content="Bootstrapping Visual Assistant Development with Situated Interaction Simulation"/>
+  <meta property="og:url" content="colm-basis.github.io"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="./static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> -->
+
+
+  <meta name="twitter:title" content="Bootstrapping Visual Assistant Development with Situated Interaction Simulation">
+  <meta name="twitter:description" content="Bootstrapping Visual Assistant Development with Situated Interaction Simulation">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- <meta name="twitter:image" content="./static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="LLM Agent, Embodied, Multimodal, Simulation, Visual Assistant">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Bootstrapping Visual Assistant Development with Situated Interaction Simulation</title>
+  <!-- <link rel="icon" type="image/x-icon" href="./static/images/favicon.ico"> -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕶️</text></svg>">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <!-- <title>Table Example</title> -->
+  <style>
+      .video-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .video-item {
+        flex: 1 1 calc(20% - 10px); /* 5 videos in one row with space */
+        margin: 5px;
+      }
+      
+      .video-item video {
+        width: 100%;
+        height: auto;
+      }
+
+      .video-caption {
+        margin-top: 0.5rem;
+        font-weight: 500;
+        min-height: 3em; /* Ensures consistent height for captions */
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .image-item {
+        width: 30%; /* Slightly less than 33.33% to account for margins */
+        margin: 1%;
+      }
+
+      .image-item-leftmost {
+        width: 33%; /* Slightly less than 33.33% to account for margins */
+        margin: 1%;
+      }
+
+      .image-item img {
+        width: 100%;
+        height: auto;
+      }
+      
+      table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      th, td {
+          padding: 12px;
+          border: 1px solid black;
+          text-align: center;
+      }
+
+      th {
+          background-color: #f2f2f2;
+          text-align: center;
+      }
+
+      .table-striped tbody tr:nth-of-type(odd) {
+          background-color: #f9f9f9;
+      }
+
+      .bold {
+          font-weight: bold; /* Make elements with this class bold */
+      }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var carousels = bulmaCarousel.attach('#results-carousel', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+        autoplay: false,
+        pauseOnHover: true
+      });
+    });
+    </script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Bootstrapping Visual Assistant Development with Situated Interaction Simulation</h1>
+            <h3 class="title is-4 publication-title">
+              <strong>Yichi Zhang<sup>1</sup>, Run Peng<sup>1</sup>, Lingyun Wu<sup>1</sup>, Yinpei Dai<sup>1</sup>, Xuweiyi Chen<sup>2</sup>, Qiaozi Gao<sup>3</sup>, Joyce Chai<sup>1</sup></strong>
+            </h3>
+            <p>
+              <sup>1</sup>University of Michigan, <sup>2</sup>University of Virginia, <sup>3</sup>Amazon<br>
+              {zhangyic, roihn, chaijy}@umich.edu
+            </p>
+            <!-- <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://github.com/colm2025-329/BASIS"
+                      class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <figure>
+      <img src="./static/images/teaser_oracle.png" alt="main" width=100%s>
+    </figure>
+    <br>
+    <h2 class="subtitle has-text-centered">
+      A visual assistant (oracle, GPT4o) proactively helps the user complete tasks in a simulated environment.</b>.
+    </h2>
+    <br><br>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Visual assistants that can guide humans through complex tasks in physical environments have significant potential, yet their development is hindered by the high cost of human-in-the-loop data collection. We present BASIS (Bootstrapping Assistant modeling with Situated Interaction Simulation), a novel framework that fundamentally rethinks how visual assistants are developed and evaluated. Rather than relying on expensive human data collection, BASIS leverages simulation to bootstrap capable assistants through three interconnected stages: (1) Situated Interaction Simulation generates high-quality synthetic data through interactions between oracle assistants and simulated users; (2) Autonomous Model Development trains and continuously evaluates assistant models using this synthetic data; and (3) Real-User Validation verifies effectiveness with human users. We implement BASIS in Alexa Arena and demonstrate that our best fine-tuned vision-language model trained solely from synthetic data achieves a 72.9% success rate with real humans, reaching 82.3\% of an oracle assistant's success rate (88.6%) that can access privileged information. Through detailed error analysis, we identify object identification as the primary bottleneck for current visual assistants. Our approach successfully bridges the gap between simulation and reality, establishing a scalable pipeline for developing assistants that can effectively guide users through complex tasks.            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Start of Video Model -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="subtitle is-3 has-text-centered">
+      <strong>Model Assistant with Human User!</strong>
+    </h2>
+    <p class="has-text-centered">
+      Using <span class="dnerf">ORACLE ASSISTANT with SIMULATED USER</span>, you can train a reliable visual assistant! <br>
+      Everything Synthetic✅ Evaluation Automated✅
+    </p>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-model1">
+          <video poster="" id="model_color_fan_blue" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/model_color_fan_blue_compressed.mp4" type="video/mp4">
+          </video>
+          <div class="video-caption is-5 has-text-centered">Task: Change the fan's color to blue.</div>
+        </div>
+        
+        <div class="item item-model2">
+          <video poster="" id="model_enlarge_radio" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/model_enlarge_radio_compressed.mp4" type="video/mp4">
+          </video>
+          <div class="video-caption is-5 has-text-centered">Task: Help grow the broken radio into a gigantic size.</div>
+        </div>
+        <!-- some placeholders -->
+        <!-- <div class="item item-model2">
+          <video poster="" id="model_enlarge_radio" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/model_enlarge_radio_compressed.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-model2">
+          <video poster="" id="model_enlarge_radio" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/model_enlarge_radio_compressed.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-model2">
+          <video poster="" id="model_enlarge_radio" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/model_enlarge_radio_compressed.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Video Model -->
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <hr style="height: 2px; background-color: #dddddd; border: none;">
+    </div>
+  </div>
+</div>
+<!-- Start of Video Oracle -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="subtitle is-3 has-text-centered">
+      <strong>Oracle Assistant with Human User!</strong>
+    </h2>
+    <p>
+      Oracle assistant uses perfect perception with set-of-mark labels, while trained model uses raw observation. Acceptable performance gap!
+    </p>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-oracle1">
+          <video poster="" id="oracle-feed-dinosaur" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/oracle_feed_dinosaur_compressed.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-oracle1">
+          <video poster="" id="oracle-feed-dinosaur" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/oracle_feed_dinosaur_compressed.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!-- <div class="item item-oracle1">
+          <video poster="" id="oracle-feed-dinosaur" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/oracle_feed_dinosaur_compressed.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-oracle1">
+          <video poster="" id="oracle-feed-dinosaur" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/oracle_feed_dinosaur_compressed.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Video Oracle -->
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <hr style="height: 2px; background-color: #dddddd; border: none;">
+    </div>
+  </div>
+</div>
+
+<!-- Start of Error Analysis -->
+<section class="section">
+<div class="container is-max-desktop">
+  <h1 class="title is-3  has-text-centered">Error Analysis</h1>
+  <div class="content has-text-justified">
+    <p>
+      Performance gap does exist. What is behind the success rate? We manually annotated the assistant behaviors and compared frequent errors!
+    </p>
+  </div>
+  <div class="content has-text-justified has-text-centered has-text-centered is-centered">
+    <figure>
+      <img src="./static/images/error_analysis.png" alt="main" width=100%s>
+    </figure>
+  </div>
+  <br>
+
+  <h2 class="subtitle is-4 has-text-centered">
+    <strong>One example of imperfect assistant😢</strong>
+  </h2>
+  <div class="content has-text-justified has-text-centered has-text-centered is-centered">
+    <figure>
+      <img src="./static/images/model_error.png" alt="main" width=100%s>
+    </figure>
+  </div>
+</div>
+</section>
+<!-- End of Error Analysis -->
+
+<!-- </body> -->
+
+<!--BibTex citation -->
+<!--End BibTex citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This website is borrowed from <a href="https://nerfies.github.io" target="_blank">Nerfies</a> and licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
